@@ -2,14 +2,14 @@ version: '3.8'
 
 services:
   eureka-server:
-    build: ./EurekaServerResgitry
+    build: ./EureukaServerRegistry
     ports:
       - "8761:8761"
     networks:
       - microservices-network
 
   api-gateway:
-    build: ./ApiGateWay
+    build: ./ApiGateway
     ports:
       - "8889:8889"
     depends_on:
